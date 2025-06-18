@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museu Nacional</title>
+    <style>
+      header div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        background-color: rgba(227, 225, 233, 0.333);
+        padding: 20px 0;
+      }
+
+      header div img {
+        margin: 0;
+        background: none;
+        text-align: center;
+        max-height: 80px;
+        width: auto;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      main img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      body {
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+        padding-bottom: 60px; /* Espaço para não esconder conteúdo atrás do footer */
+        font-family: Arial, sans-serif;
+      }
+
+      footer {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: rgba(227, 225, 233, 0.333);
+        color: black;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 16px;
+        line-height: 30px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        padding: 10px 20px;
+      }
+
+      .grid-container div {
+        font-size: 1.2em;
+        padding-bottom: 40px;
+      }
+
+      .conteiner {
+        font-size: 20px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        padding: 60px 20px;
+        border:solid 2px;
+        width: 100%;
+      }
+
+      .conteinerFilho img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .conteinerFilho h2 {
+        margin-top: 10px;
+      }
+
+      .conteinerLado p::before {
+        content: "► ";
+        font-size: 34px;
+        color: black;
+        
+      }
+
+      #menu {
+        display: flex;
+        padding: 40px 20px;
+        gap: 20px;
+      }
+
+      .menulateral{
+        border:solid 2px;
+        width: 350px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="img/logo.png" alt="Logo Museu" />
+        <img src="img/logo_museu-02.png" alt="Logo Secundária" />
+      </div>
+    </header>
+
+    <main>
+      <img src="img/header.jpg" alt="Banner Principal" />
+    </main>
+
+    <section id="menu">
+      <div class="conteinerLado">
+        <div class="menulateral">
+          <p>O MUSEU</p>
+          <p>EXPOSIÇÕES</p>
+          <p>PESQUISA</p>
+          <p>PÓS-GRADUAÇÃO</p>
+          <p>EXTENSÃO</p>
+          <p>ACERVO</p>
+          <p>VISITAÇÃO</p>
+          <p>EDUCAÇÃO</p>
+        </div>
+      </div>
+      <div>
+        <!-- img da lateral do site -->
+      </div>
+
+      <div class="conteiner">
+        <div class="conteinerFilho">
+          <img src="img/img1.jpeg" alt="Lançamento" />
+          <h2>LANÇAMENTO</h2>
+        </div>
+        <div class="conteinerFilho">
+          <img src="img/img2.jpg" alt="Bolsas de Doutorado" />
+          <h2>BOLSAS DE DOUTORADO</h2>
+        </div>
+        <div class="conteinerFilho">
+          <img src="img/img3.jpeg" alt="Aniversário do Museu" />
+          <h2>ANIVERSÁRIO DO MUSEU</h2>
+        </div>
+        <div class="conteinerFilho">
+          <img src="img/img4.jpg" alt="Relatórios Anuais" />
+          <h2>RELATÓRIOS ANUAIS</h2>
+        </div>
+        <div class="conteinerFilho">
+          <img src="img/img5.jpg" alt="Mestrado Profissional" />
+          <h2>MESTRADO PROFISSIONAL</h2>
+        </div>
+        <div class="conteinerFilho">
+          <img src="img/img6-2.jpeg" alt="Concurso Docente" />
+          <h2>CONCURSO DOCENTE DI</h2>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid-container">
+        <div>
+          <h3>LOCALIZAÇÃO</h3>
+          <p>Quinta da Boa Vista, São Cristóvão</p>
+          <p>Rio de Janeiro - RJ</p>
+          <p>CEP: 20940-040</p>
+          <a href="https://www.google.com/maps/@-22.905768,-43.226527,758m/data=!3m1!1e3?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Veja no Google Maps</a>
+        </div>
+        <div>
+          <h3>EXPEDIENTE</h3>
+          <p>Exposição “Um Museu de Descobertas”</p>
+          <p>Terça-feira: 10h</p>
+          <p>Quarta a Sexta-feira: 10h e 14h</p>
+          <p>Somente grupos agendados:</p>
+          <p><a href="mailto:agendamento.nap@mn.ufrj.br">agendamento.nap@mn.ufrj.br</a></p>
+        </div>
+        <div>
+          <h3>CONTATO</h3>
+          <p><a href="mailto:museu@mn.ufrj.br">museu@mn.ufrj.br</a></p>
+          <p><a href="mailto:falecomdiretor@mn.ufrj.br">falecomdiretor@mn.ufrj.br</a></p>
+          <p><a href="mailto:imprensa@mn.ufrj.br">imprensa@mn.ufrj.br</a></p>
+          <p><a href="mailto:agendamento.nap@mn.ufrj.br">Visitas em Grupo</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>&copy; 2025 Museu Nacional</div>
+    </footer>
+  </body>
+</html>
+
